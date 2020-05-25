@@ -1,0 +1,7 @@
+---
+# This playbook will install Apache and second part will start it and let active after each reboot
+- name: Install Apache
+  yum: name=httpd state=present
+  
+- name: Start Apache
+  service: name=httpd state=started enabled=yes
