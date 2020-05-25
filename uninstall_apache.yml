@@ -1,0 +1,2 @@
+- name: Unistall Apache
+  yum: name=httpd state=absent
