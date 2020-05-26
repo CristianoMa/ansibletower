@@ -1,0 +1,9 @@
+- name: Install MySQL
+  hosts: all
+  
+  tasks:
+    - name: Install MySQL
+      yum: name=mysql state=present
+      
+    - name: start MySQL service
+      service: name=mysqld state=started enabled=yes
