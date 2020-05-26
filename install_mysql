@@ -1,6 +1,5 @@
 - name: Install MySQL
   hosts: all
-  
   tasks:
     - name: Install MySQL
       yum: name=mysql state=present
