@@ -1,2 +1,7 @@
-- name: Unistall Apache
-  yum: name=httpd state=absent
+- name: Uninstall Apache
+  hosts: all
+  
+  tasks:
+
+    - name: Unistall Apache
+      yum: name=httpd state=absent
