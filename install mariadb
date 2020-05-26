@@ -1,0 +1,5 @@
+- name: Install
+  hosts: all
+  tasks:
+    - name: Install MariaDB
+      service: name=mariadb state=absent
