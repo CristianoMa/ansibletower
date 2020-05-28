@@ -2,4 +2,4 @@
   hosts: all
   tasks:
     - name: Install MariaDB
-      yum: name=mariadb state=absent
+      yum: name=mariadb state=present
